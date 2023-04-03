@@ -11,9 +11,9 @@ Preentrega1
 
 El presente contiene el proyecto de la pre entrega 1.
 
-El codigo relaiza la siguientes acciones: 
+El codigo relaiza las siguientes acciones: 
  
- *Toma dos pedidos, uno de comida y otro de bebida:
+ *Toma dos pedidos, uno de comida y otro de bebida.
  *Calcula la suma de los dos pedidos y entrega un total a pagar.
 
 ## Feedback
