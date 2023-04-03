@@ -1,10 +1,11 @@
 let comida; 
 let bebida;
 let opcion;
-let valorComida;
-let valorBebida;
+let valorComida = 0;
+let valorBebida = 0;
+let totalCompra = 0;
 
- function total (valor1, valor2) {
+ function calcularTotal (valor1, valor2) {
     total = valor1 + valor2;
     return total;
  }
@@ -48,11 +49,19 @@ do {
             }
             break;
         case 3:
-            alert("Se ha calculado el total, selecciona la opción 4") 
-            total (valorBebida, valorComida);
+            if (valorComida == 0 || valorBebida == 0) {
+                alert("No se ha ingresado nigun valor aún.");
+            } else {
+                alert("Se ha calculado el total, selecciona la opción 4") 
+                totalCompra = calcularTotal (valorBebida, valorComida);
+            }         
             break;
         case 4:
-            alert("El total es: " + total);
+            if (totalCompra == 0) {
+                alert("No se ha ingresado nigun valor aún.")
+            } else {
+                alert("El total es: " + "$"+ totalCompra);
+            }
             break;
         case 5:
             alert("Gracias por elegir Fast and Food, regrese pronto");
