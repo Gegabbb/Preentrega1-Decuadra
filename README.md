@@ -11,7 +11,7 @@ Preentrega2
 
 El presente contiene el proyecto de la pre entrega 2.
 
-El codigo relaiza las siguientes acciones: 
+El codigo relaliza las siguientes acciones: 
  
  *Toma pedidos, de comida, de bebida y postre.
  *Calcula el total de de la cuenta, aplica un descuento si corresponde y entrega un total a pagar.
