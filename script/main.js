@@ -1,5 +1,5 @@
 //objetos
-//este objeto tiene el menu de comida y bebida
+//este objeto tiene el menu de comidas, bebidas, y postres, con sus respectivos precios
 let menu = {
   comidas: [
     { nombre: "Guiso", precio: 2302.54 },
@@ -40,7 +40,7 @@ function imprimirMenuObjetos(productos) {
     );
   }
 }
-//obtiene la obcion del menu, y verifica que sea valido
+//obtiene la opcion del menu, y verifica que sea valido
 function obtenerOpcionMenu(mensaje) {
   let opcion = " ";
   while (opcion === " " ||opcion === null) {
@@ -57,15 +57,15 @@ const DESCUENTOS = [0, 5, 7, 10, 12, 15, 20];
 
 //variables y arreglos
 let opcion;
-//variables case 1
+//variables y arreglos case 1
 let opcionComida;
 let consumoComida = [];
 let valorComida = 0;
-//variables case 2
+//variables y arreglos  case 2
 let opcionBebida;
 let consumoBebida = [];
 let valorBebida = 0;
-//variables case 3:
+//variables y arreglos  case 3:
 let opcionPostre;
 let consumoPostre = [];
 let valorPostre = 0;
