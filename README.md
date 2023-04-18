@@ -1,6 +1,6 @@
 # Project Title
 
-Preentrega1
+Preentrega2
 
 ## Authors
 
@@ -9,12 +9,12 @@ Preentrega1
 
 ## Documentation
 
-El presente contiene el proyecto de la pre entrega 1.
+El presente contiene el proyecto de la pre entrega 2.
 
 El codigo relaiza las siguientes acciones: 
  
- *Toma dos pedidos, uno de comida y otro de bebida.
- *Calcula la suma de los dos pedidos y entrega un total a pagar.
+ *Toma pedidos, de comida, de bebida y postre.
+ *Calcula el total de de la cuenta, aplica un descuento si corresponde y entrega un total a pagar.
 
 ## Feedback
 
