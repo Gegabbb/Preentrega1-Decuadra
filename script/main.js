@@ -15,6 +15,14 @@ let menu = {
     { nombre: "Manaos", precio: 290.73 },
     { nombre: "Bagio", precio: 412.5 },
   ],
+  postres: [
+    {nombre: "Helado", precio: 1231.12 },
+    {nombre: "Flan", precio: 935.42 },
+    {nombre: "Gelatina", precio: 602.23},
+    {nombre: "Ensalada de fruta", precio: 1230.32},
+    {nombre: "Arroz con leche", precio:702.65 },
+    {nombre: "Torta", precio: 1523.65}
+  ]
 };
 
 //funciones
@@ -32,12 +40,6 @@ function imprimirMenuObjetos(productos) {
     );
   }
 }
-//imprime en la consola el menu de postres con su precios, creado con arrays
-function imprimirMenuConPrecio(postres, precios) {
-  for (const [indice, postre] of postres.entries()) {
-    console.log(indice + " --> " + postre+ " $" + precios[indice]);
-  }
-}
 //obtiene la obcion del menu, y verifica que sea valido
 function obtenerOpcionMenu(mensaje) {
   let opcion = " ";
@@ -51,19 +53,9 @@ function acumuladorDePrecios(consumo) {
   return consumo.reduce((acumulador, elemento) => acumulador + elemento, 0);
 }
 //arreglos
-
-let postres = [
-  "Helado",
-  "Flan",
-  "Gelatina",
-  "Ensalada de fruta",
-  "Arroz con Leche",
-  "Torta",
-];
-let postresPrecios = [1500.43, 900.54, 500.19, 890.45, 500.24, 1250.87];
 const DESCUENTOS = [0, 5, 7, 10, 12, 15, 20];
 
-//variables
+//variables y arreglos
 let opcion;
 //variables case 1
 let opcionComida;
@@ -77,8 +69,9 @@ let valorBebida = 0;
 let opcionPostre;
 let consumoPostre = [];
 let valorPostre = 0;
-//varibales case
+//varibales case 4  y 5
 let totalCompra = 0;
+// contador para los case 1, 2, 3
 let i = 0;
 
 //bucle
@@ -95,7 +88,7 @@ do {
   );
 
   switch (opcion) {
-    //inicio del case 1: en este case se obtiene el pedido de comidas, y se calcula el precio total de toda las comidas pedidas.
+    //inicio del case 1: en este case se obtiene el pedido de comidas, y se calcula el precio total de todas las comidas pedidas.
     case 1:
       console.log(
         "------------------------------------------------------------\n"
@@ -148,20 +141,20 @@ do {
       break;
     //inicio del case 3: en este case se obtiene el pedido de postre, y se calcula el precio total de laos postres pedidos.
     case 3:
-      imprimirMenuConPrecio(postres, postresPrecios);
+      imprimirMenuObjetos(menu.postres);
       do {
         opcionPostre = obtenerOpcionMenu(
           "¿Que desea consumir? Para cancelar precione n"
         );
         if (
           opcionPostre >= 0 &&
-          opcionPostre < postres.length &&
-          postres[opcionPostre]
+          opcionPostre < menu.postres.length &&
+          menu.postres[opcionPostre]
         ) {
           console.log(
             "------------------------------------------------------------\n"
           );
-          consumoPostre[i++] = postresPrecios[opcionPostre];
+          consumoPostre[i++] = menu.postres[opcionPostre].precio;
           valorPostre = acumuladorDePrecios(consumoPostre);
           console.log("El valor total en postres seran de: $" + valorPostre);
         }
