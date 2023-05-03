@@ -1,6 +1,6 @@
 # Project Title
 
-Preentrega2
+Preentrega3
 
 ## Authors
 
@@ -9,7 +9,7 @@ Preentrega2
 
 ## Documentation
 
-El presente contiene el proyecto de la pre entrega 2.
+El presente contiene el proyecto de la pre entrega 3.
 
 El codigo relaliza las siguientes acciones: 
  
